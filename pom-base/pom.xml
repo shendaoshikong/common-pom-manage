@@ -21,11 +21,9 @@
         <maven.compiler.target>1.7</maven.compiler.target>
 
         <!--下面这两个是springAOP需要用到 -->
-        <aspectjweaver.version>1.9.0.RC2</aspectjweaver.version>
         <persistence-api.version>1.0.2</persistence-api.version>
         <hibernate.version>5.2.12.Final</hibernate.version>
         <security-version>5.0.0.RELEASE</security-version>
-        <log4j2-version>2.10.0</log4j2-version>
     </properties>
 
     <dependencies>
@@ -44,17 +42,14 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>${log4j2-version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>${log4j2-version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-web</artifactId>
-            <version>${log4j2-version}</version>
         </dependency>
     </dependencies>
 
