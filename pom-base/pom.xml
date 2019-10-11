@@ -52,7 +52,7 @@
             <artifactId>log4j-web</artifactId>
         </dependency>
 
-
+        <!-- 因为maven带servlet-api的，但是不导入jsp又报错，所以导入servlet-jar的时候配置scope-provided，发布到服务器的时候，自动去除 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
