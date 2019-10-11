@@ -112,21 +112,24 @@
         <artifactId>jstl</artifactId>
         <version>1.2</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+      <!-- 因为maven带servlet-api的，但是不导入jsp又报错，所以导入servlet-jar的时候配置scope-provided，发布到服务器的时候，自动去除 -->
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
         <version>2.5</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>${javax_servlet_version}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jsp-api</artifactId>
-        <version>2.0</version>
+        <version>2.2</version>
+        <scope>provided</scope>
       </dependency>
       <!-- 验证框架所需要的包 -->
       <dependency>
