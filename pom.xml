@@ -44,7 +44,7 @@
     <cxf_version>3.0.14</cxf_version>
     <thrift_version>0.8.0</thrift_version>
     <hessian_version>4.0.38</hessian_version>
-    <servlet_version>3.1.0</servlet_version>
+    <javax_servlet_version>4.0.1</javax_servlet_version>
     <jetty_version>6.1.26</jetty_version>
     <validation_version>1.1.0.Final</validation_version>
     <hibernate_validator_version>5.4.1.Final</hibernate_validator_version>
@@ -117,12 +117,16 @@
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
         <version>2.5</version>
-        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
-        <version>${servlet_version}</version>
+        <version>${javax_servlet_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>2.0</version>
       </dependency>
       <!-- 验证框架所需要的包 -->
       <dependency>
